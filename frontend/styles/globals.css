@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+@layer base{
+  *{
+    font-family: 'Mulish', sans-serif;
+  }
+
+  body{
+    @apply bg-hwc-darkPurple text-white;
+  }
+
+  h1{
+    @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#AD83EA] to-[#48CBC5] text-5xl font-extrabold pb-2 ;
+  }
+
+  h2{
+    @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#AD83EA] to-[#48CBC5] text-4xl font-extrabold pb-2 ;
+  }
+
+  h3{
+    @apply text-white text-4xl font-extrabold;
+  }
+
+  h4{
+    @apply text-hwc-yellow text-xl font-bold;
+  }
+
+  h5{
+    @apply text-hwc-turq text-xl font-bold;
+  }
+
+  h6{
+    @apply text-hwc-lightPurple text-xl font-bold;
+  }
+
+  p{
+    @apply text-white font-medium text-base;
+  }
+
+  button{
+    @apply bg-hwc-turq font-semibold text-base py-1 px-4 rounded-full text-hwc-darkPurple hover:bg-hwc-lightPurple duration-300;
+  }
+
+}
+
+@layer components{
+  .someClass{
+    @apply text-white;
+  }
+}
